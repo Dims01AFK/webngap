@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homepage</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <style>
+        /* Custom lighting effect using CSS */
+        .hover-light:hover {
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
+                         0 0 20px rgba(255, 255, 255, 0.5),
+                         0 0 30px rgba(255, 255, 255, 0.4);
+        }
+        .hover-border-light:hover {
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
+                        0 0 20px rgba(255, 255, 255, 0.5),
+                        0 0 30px rgba(255, 255, 255, 0.4);
+            transform: scale(1.05);
+        }
+        /* Animation for hiding and showing the login link */
+        .login-link {
+            transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+            transform: translateX(100%);
+            opacity: 0;
+        }
+        .login-container:hover .login-link {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    </style>
+</head>
+<body class="bg-cover bg-center min-h-screen" style="background-image: url('asset/wp3279322.jpg')">
+    <!-- Navigation Bar -->
+    <header class="flex items-center justify-between py-4 fixed top-0 w-full px-8" style="margin-top: 12px;">
+        <!-- Area kiri kosong untuk balancing -->
+        <div class="w-1/3"></div>
+        
+        <!-- Menu Tengah -->
+        <div class="w-1/3 flex justify-center space-x-8">
+            <a href="index.html" class="text-white font-semibold hover:underline hover-light transition duration-300">HOME</a>
+            <a href="berita.html" class="text-white font-semibold hover:underline hover-light transition duration-300">BERITA</a>
+            <a href="organ.html" class="text-white font-semibold hover:underline hover-light transition duration-300">ORGANISASI</a>
+            <a href="about.html" class="text-white font-semibold hover:underline hover-light transition duration-300">ABOUT US</a>
+            <a href="our.html" class="text-white font-semibold hover:underline hover-light transition duration-300">OUR DEV</a>
+        </div>
+    
+        <!-- Tombol Login di sebelah kanan -->
+        <div class="w-1/3 flex justify-end space-x-4 login-container">
+            <a href="#" class="text-white font-semibold hover:underline hover-light transition duration-300 login-link">LOGIN</a>
+            <a href="#" class="text-white font-semibold hover:underline hover-light transition duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-square-user"><rect width="18" height="18" x="3" y="3" rx="2"/><circle cx="12" cy="10" r="3"/><path d="M7 21v-2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v2"/></svg>
+            </a>
+        </div>
+    </header>
+    
+    
+    
+    
+
+    <!-- Logo Grid Section -->
+  <div class="flex justify-center items-center h-screen pt-24">
+    <div class="grid grid-cols-1 gap-4 w-2/4 mt-auto mb-16">
+     <!-- First Row -->
+     <div class="grid grid-cols-3 gap-4">
+      <!-- Logo 1 -->
+      <div  class="bg-gray-200/50 p-2 rounded-md shadow-md flex items-center overflow-hidden backdrop-filter hover-border-light transition-transform duration-300" style="width: 250px; margin-bottom: -2px; margin-right: -2px;">
+       <img alt="Logo of Karang Taruna" class="w-12 h-12 mr-4" height="48" src="asset/lo1.jpg" width="48"/>
+       <span class="text-black font-semibold">
+        Karang Taruna
+       </span>
+      </div>
+      <!-- Logo 2 -->
+      <div class="bg-gray-200/50 p-2 rounded-md shadow-md flex items-center overflow-hidden backdrop-filter hover-border-light transition-transform duration-300" style="width: 250px; margin-bottom: -2px; margin-right: -2px;">
+       <img alt="Logo of Darul Mukmin" class="w-12 h-12 mr-4" height="48" src="asset/lo2.png" width="48"/>
+       <span class="text-black font-semibold">
+        Darul Mukmin
+       </span>
+      </div>
+      <!-- Logo 3 -->
+      <div class="bg-gray-200/50 p-2 rounded-md shadow-md flex items-center overflow-hidden backdrop-filter hover-border-light transition-transform duration-300" style="width: 250px; margin-bottom: -2px; margin-right: -2px;">
+       <img alt="Logo of Banser Salatiga" class="w-12 h-12 mr-4" height="48" src="asset/lo3.png" width="48"/>
+       <span class="text-black font-semibold">
+        Banser Salatiga
+       </span>
+      </div>
+     </div>
+     <!-- Second Row -->
+     <div class="grid grid-cols-3 gap-4">
+      <!-- Logo 4 -->
+      <div class="bg-gray-200/50 p-2 rounded-md shadow-md flex items-center overflow-hidden backdrop-filter hover-border-light transition-transform duration-300" style="width: 250px; margin-bottom: -2px; margin-right: -2px;">
+       <img alt="Logo of Pemuda Pancasila" class="w-12 h-12 mr-4" height="48" src="asset/lo4.png" width="48"/>
+       <span class="text-black font-semibold">
+        Pemuda Pancasila
+       </span>
+      </div>
+      <!-- Logo 5 -->
+      <div class="bg-gray-200/50 p-2 rounded-md shadow-md flex items-center overflow-hidden backdrop-filter hover-border-light transition-transform duration-300" style="width: 250px; margin-bottom: -2px; margin-right: -2px;">
+       <img alt="Logo of Magiccom Sakti" class="w-12 h-12 mr-4" height="48" src="asset/lo5.jpg" width="48"/>
+       <span class="text-black font-semibold">
+        Magiccom Sakti
+       </span>
+      </div>
+      <!-- Logo 6 -->
+      <div class="bg-gray-200/50 p-2 rounded-md shadow-md flex items-center overflow-hidden backdrop-filter hover-border-light transition-transform duration-300" style="width: 250px; margin-bottom: -2px; margin-right: -2px;">
+       <img alt="Logo of Perguruan Magiccom" class="w-12 h-12 mr-4" height="48" src="asset/lo6.jpg" width="48"/>
+       <span class="text-black font-semibold">
+        Perguruan Magiccom
+       </span>
+      </div>
+     </div>
+    </div>
+   </div>
+</body>
+</html>
